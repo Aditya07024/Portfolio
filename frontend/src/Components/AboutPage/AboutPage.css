@@ -1,0 +1,111 @@
+.about-div {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.about-me {
+  /* margin: 30px 50px; */
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 18px;
+  height: 115px;
+}
+hr {
+  width: 350px;
+  margin-left: 150px;
+}
+.about {
+  color: rgba(255, 255, 255, 0.883);
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.me {
+  color: rgb(13, 67, 70);
+  font-family: "Playpen Sans Deva", cursive;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 40px;
+  /* color: white; */
+  h2 {
+    color: brown;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-style: bold;
+    font-size: 45px;
+    margin: 6px 30px;
+  }
+  p {
+    color: rgba(241, 217, 251, 0.828);
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    margin: 0px 20px;
+  }
+}
+
+.row1 {
+  display: flex;
+  height: 650px;
+  gap: 26px;
+  flex-direction: row;
+
+  .item1 {
+    border: 3px rgba(186, 145, 155, 0.768) solid;
+    border-radius: 20px;
+    width: 58%;
+    height: 60%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -4px 9px 14px white;
+    .text-item {
+      font-size: 26px;
+    }
+    .box-creative {
+      border-radius: 20px;
+      width: 250%;
+      img {
+        height: 90%;
+        width: 100%;
+      }
+    }
+  }
+
+  .item2 {
+    height: 60%;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    font-size: 18px;
+    .item {
+      border: 3px rgba(186, 145, 155, 0.768) solid;
+      border-radius: 20px;
+      height: 50%;
+      width: 100%;
+    }
+  }
+}
+.item3 {
+  border: 3px rgba(186, 145, 155, 0.768) solid;
+  border-radius: 20px;
+  width: 98.5%;
+  height: 50%;
+  margin-top: -220px;
+  font-size: 18px;
+}

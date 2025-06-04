@@ -1,0 +1,137 @@
+.front-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin-left: 20px;
+  background-color: transparent;
+  left: 50px;
+  .hello {
+    font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+    height: 210px;
+    font-size: 70px;
+    padding-left: 30px;
+    background-color: transparent;
+    color: red;
+}
+  .name {
+    font-size: 60px;
+    padding-left: 90px;
+    background-color: transparent;
+    color: white;
+    font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  }
+  .description {
+    font-size: 50px;
+    padding-left: 35px;
+    background-color: transparent;
+    color: rgb(135, 103, 42);
+      font-family: "Bungee Shade", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 33px;
+  }
+  .button-div {
+    padding-top: 90px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+    button {
+      padding: 10px 20px;
+      background-color: rgba(255, 0, 0, 0.822);
+      color: white;
+      border: 1.5px solid rgb(255, 255, 255);
+      border-radius: 5px;
+      font-size: 17px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .project-button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid rgb(251, 255, 0);
+      font-size: 16px;
+    }
+  }
+}
+
+.com-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../../assets/computer.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+@keyframes slideForward {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.social-icons {
+  padding: 40px 10px;
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.social-icons img {
+  background-color: white;
+  border: 3px solid rgb(186, 175, 175);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  animation: slideForward 2s ease forwards;
+  -webkit-animation: slideForward 2s ease forwards;
+  &:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  &:nth-child(3) {
+    animation-delay: 1s;
+  }
+  &:nth-child(4) {
+    animation-delay: 1.3s;
+  }
+  &:nth-child(5) {
+    animation-delay: 1.6s;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 3px solid rgb(55, 29, 0);
+  margin: 0 0;
+  width: 60%;
+  margin-bottom: 15px;
+}
