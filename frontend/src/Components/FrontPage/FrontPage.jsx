@@ -21,8 +21,8 @@ const FrontPage = () => {
           Website Developer
         </div>
         <div className="button-div">
-          <button className='project-button'><a href="#project">My Projects</a></button>
-          <button><a href="https://drive.google.com/drive/folders/1-ADQBKLl0qADph0_T-f-CiBb6pQoVNsh?usp=sharing">My Resume</a></button>
+          <a href="#project"><button className='project-button'>My Projects</button></a>
+          <a href="https://drive.google.com/drive/folders/1-ADQBKLl0qADph0_T-f-CiBb6pQoVNsh?usp=sharing"><button>My Resume</button></a>
         </div>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/adityakumar0702/"><img src={linkdin} alt="LinkedIn" /></a>

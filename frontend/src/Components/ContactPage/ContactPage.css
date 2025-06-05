@@ -8,7 +8,6 @@
     border: 4px solid wheat;
 }
 .main {
-/* background-color: transparent; */
 background-color: rgb(225, 188, 225);
     display: flex;
     flex-direction: row;
@@ -50,11 +49,11 @@ background-color: rgb(225, 188, 225);
             background-color: transparent;
             width: 100%;
             margin-top: 4%;
-            
+        }
 
             h1 {
                 color: rgb(197, 7, 7);
-                font-size: 90px;
+                font-size:590%;
                 font-family: "Rajdhani", sans-serif;
                 font-weight: 700;
                 font-style: normal;
@@ -82,7 +81,7 @@ h2{
                 color: black;
             }
         }
-    }
+    
 
     .connect-right-div {
         width: auto;
@@ -106,13 +105,133 @@ p{
     background-color: transparent;
     font-size: 20px;
 }}
+
+
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .connect-right-div {
-    display: none !important;
+  .connect-right-div img{
+    width: 80%;
   }
 }
 @media (max-width: 575.98px) {
   .connect-right-div {
     display: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .left-div {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .social-icon-div {
+    flex-direction: row !important;
+    width: 100% !important;
+    margin: 10px 0 0 0 !important;
+    gap: 10px !important;
+    justify-content: center !important;
+  }
+  .social-icon-div img {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+  }
+  .contact-div,
+  h1,
+  h2,
+  p {
+    width: 100% !important;
+    margin-top: 8px !important;
+    text-align: left !important;
+  }
+  h1 {
+    font-size: 32px !important;
+    margin-bottom: 4px !important;
+  }
+  h2 {
+    font-size: 20px !important;
+    margin-left: 0 !important;
+  }
+  p {
+    font-size: 14px !important;
+    margin-left: 0 !important;
+  }
+  a {
+    font-size: 14px !important;
+    margin-left: 0 !important;
+  }
+  .connect-right-div {
+    display: none !important;
+  }
+  .footer {
+    text-align: center !important;
+  }
+  .footer p {
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .main {
+    flex-direction: row !important;
+    padding: 20px 0 !important;
+  }
+  .left-div {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .social-icon-div {
+    flex-direction: row !important;
+    width: 100% !important;
+    margin: 16px 0 0 0 !important;
+    gap: 16px !important;
+    justify-content: center !important;
+  }
+  .social-icon-div img {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+  }
+  .contact-div,
+  h1,
+  h2,
+  p {
+    width: 100% !important;
+    margin-top: 10px !important;
+    text-align: left !important;
+  }
+  h1 {
+    font-size: 40px !important;
+    margin-bottom: 6px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+    margin-left: 0 !important;
+  }
+  p {
+    font-size: 18px !important;
+    margin-left: 0 !important;
+  }
+  a {
+    font-size: 16px !important;
+    margin-left: 0 !important;
+  }
+  .connect-right-div img{
+    /* display: none !important; */
+    width: 100%;
+  }
+  .footer {
+    text-align: center !important;
+  }
+  .footer p {
+    font-size: 14px !important;
+    text-align: center !important;
   }
 }

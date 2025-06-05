@@ -154,9 +154,16 @@
   .more-text{
     display: none;
   }
-  .time2{
-    display: contents;
-  }
+  .time2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.time2 h2 {
+  padding-left: 0;
+  font-size: 1.4em;
+}
   .more-text h2 {
     font-size: 40px;
     margin-left: 0;
