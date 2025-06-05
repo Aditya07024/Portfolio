@@ -179,9 +179,12 @@ a{
   }
   .text .description {
     font-size: 18px !important;
-    padding-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 10px 0;
     color: rgb(229, 255, 0) !important;
+    background-color: rgb(45, 0, 0);
+    border-radius: 20px;
   }
   .text .button-div {
     padding-top: 10px;
