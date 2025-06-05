@@ -37,11 +37,10 @@
   }
   .description {
     font-size: 50px;
-    padding-left: 35px;
+    padding-left: 70px;
     background-color: transparent;
-    color: rgb(135, 103, 42);
+    color: rgb(80, 184, 229);
       font-family: "Bungee Shade", sans-serif;
-      font-weight: 500;
       font-style: normal;
       font-size: 33px;
   }
@@ -134,4 +133,9 @@ hr {
   margin: 0 0;
   width: 60%;
   margin-bottom: 15px;
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
 }

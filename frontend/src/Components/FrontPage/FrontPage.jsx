@@ -18,18 +18,18 @@ const FrontPage = () => {
         </div>
         <hr/>
         <div className="description">
-          Software Developer
+          Website Developer
         </div>
         <div className="button-div">
-          <button className='project-button'>My Projects</button>
-          <button>My Resume</button>
+          <button className='project-button'><a href="#project">My Projects</a></button>
+          <button><a href="https://drive.google.com/drive/folders/1-ADQBKLl0qADph0_T-f-CiBb6pQoVNsh?usp=sharing">My Resume</a></button>
         </div>
         <div className="social-icons">
-          <img src={linkdin} alt="LinkedIn" />
-          <img src={github} alt="GitHub" />
-          <img src={leetcode} alt="LeetCode" />
-          <img src={twitter} alt="Twitter" />
-          <img src={instagram} alt="Instagram" />
+          <a href="https://www.linkedin.com/in/adityakumar0702/"><img src={linkdin} alt="LinkedIn" /></a>
+          <a href="https://github.com/Aditya07024"><img src={github} alt="GitHub" /></a>
+          <a href="https://leetcode.com/u/adityakumar07024/"><img src={leetcode} alt="LeetCode" /></a>
+          <a href="https://x.com/Aditya07024"><img src={twitter} alt="Twitter" /></a>
+          <a href="https://www.instagram.com/aditya_chaudhary_._/"><img src={instagram} alt="Instagram" /></a>
         </div>
       </div>
       <div className="com-image">

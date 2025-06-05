@@ -1,8 +1,8 @@
 .about-div {
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
 }
+
 .about-me {
   /* margin: 30px 50px; */
   display: flex;
@@ -44,6 +44,7 @@ hr {
     font-style: bold;
     font-size: 45px;
     margin: 6px 30px;
+    background-color: transparent;
   }
   p {
     color: rgba(241, 217, 251, 0.828);
@@ -51,7 +52,8 @@ hr {
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    margin: 0px 20px;
+    margin: 5px 20px;
+    background-color: transparent;
   }
 }
 
@@ -75,11 +77,14 @@ hr {
     box-shadow: -4px 9px 14px white;
     .text-item {
       font-size: 26px;
+      background-color: transparent;
     }
     .box-creative {
       border-radius: 20px;
       width: 250%;
       img {
+        background-color: transparent;
+
         height: 90%;
         width: 100%;
       }

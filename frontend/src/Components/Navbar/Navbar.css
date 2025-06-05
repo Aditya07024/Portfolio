@@ -25,7 +25,14 @@
   font-style: normal;
     display: flex;
     list-style: none;
-    gap: 20px;
-    cursor: pointer;
+    gap: 18px;
+    
   }
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: rgb(255, 255, 0);
 }

@@ -4,7 +4,7 @@ import image from "../../../src/assets/image.png"
 
 const AboutPage = () => {
   return (
-    <div className="about-div">
+    <div className="about-div" id="about">
       <div className="about-me">
         <div className="about">About</div>
         <div className="me">ME.</div>
@@ -23,7 +23,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="box-creative">
-              <img src={image}></img>
+              <img src={image} alt=""></img>
             </div>
           </div>
           <div className="item2">
