@@ -20,7 +20,6 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: bold;
-    height: 210px;
     font-size: 70px;
     padding-left: 30px;
     background-color: transparent;
@@ -143,52 +142,72 @@ a{
   background-color: transparent;
 }
 
-
 @media (max-width: 767.98px) {
-  .front-page{
-    height: 65vh;
+  .front-page {
+    height: 50vh;
     text-align: center;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
   }
-  .com-image {
-    /* display: none; */
+
+  .text {
+    position: static;
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
   }
   .text .hello {
-    font-size: 60px;
+    font-size: 38px !important;
     height: auto;
-    padding-left: 0px;
+    padding-left: 0;
+    color: red;
+  }
+  .text .hello h2 {
+    font-size: 38px !important;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
   }
   .text .name {
-    font-size: 38px;
-    padding-left: 0px;
+    font-size: 28px !important;
+    padding-left: 0;
+    margin: 0;
   }
   .text .description {
-    font-size: 28px;
-    padding-left: 0px;
+    font-size: 18px !important;
+    padding-left: 0;
+    margin: 10px 0;
+    color: rgb(229, 255, 0) !important;
   }
   .text .button-div {
-    padding-top: 0px;
-    width: 90%;
+    padding-top: 10px;
+    width: 100%;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
   .text .button-div button,
   .text .button-div .project-button {
-    font-size: 14px;
+    font-size: 14px !important;
     padding: 8px 14px;
     width: 100%;
+    margin: 0 auto;
   }
   .social-icons {
     gap: 10px;
     padding: 20px 0;
+    justify-content: center;
   }
-  hr {
-    width: 90%;
+  .social-icons img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .text hr {
+    width: 40% !important;
     margin-bottom: 10px;
   }
-  .front-page .description{
-    color: rgb(242, 255, 0);
-  }
 }
-
-
-

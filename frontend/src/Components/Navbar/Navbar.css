@@ -43,5 +43,7 @@ a:hover{
   }
   .nav-right {
     display: none;
+  }.nav-left p{
+    font-size: 30px !important;
   }
 }
