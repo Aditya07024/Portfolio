@@ -36,7 +36,7 @@ const ContactPage = () => {
         </div>
         <div className="address-div"></div>
       </div>
-      <div className="right-div">
+      <div className="connect-right-div">
         <img src={contactme} alt=""></img>
       </div>
       </div>

@@ -84,7 +84,7 @@ h2{
         }
     }
 
-    .right-div {
+    .connect-right-div {
         width: auto;
         height: 90%;
         background-color: transparent;
@@ -106,3 +106,13 @@ p{
     background-color: transparent;
     font-size: 20px;
 }}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .connect-right-div {
+    display: none !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .connect-right-div {
+    display: none !important;
+  }
+}

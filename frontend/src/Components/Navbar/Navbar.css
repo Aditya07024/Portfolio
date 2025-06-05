@@ -36,3 +36,12 @@ a{
 a:hover{
   color: rgb(255, 255, 0);
 }
+
+@media (max-width: 767.98px) {
+  .navbar{
+    width: 90%;
+  }
+  .nav-right {
+    display: none;
+  }
+}

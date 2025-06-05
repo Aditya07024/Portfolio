@@ -29,6 +29,10 @@ const ProjectPage = () => {
             <div className="line1"></div>
             <div className="project-image"><img src={project2} alt=""></img></div>
           </div>
+          <div className="more-text time2">
+            <div className="text1"><h2>"More</h2></div>
+            <div className="text2"><h3>in Development"</h3></div>
+          </div>
           <div className="more-image">
             <div className="image"><img src={image2} alt="" /></div>
           </div>
