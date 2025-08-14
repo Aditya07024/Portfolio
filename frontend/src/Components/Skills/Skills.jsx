@@ -15,7 +15,9 @@ import postman from "../../assets/postman.png";
 import python from "../../assets/python.png";
 import java from "../../assets/java.png";
 import aws from "../../assets/aws.png";
-
+import socket from "../../assets/Socket-io.svg"
+import websockets from "../../assets/images.png"
+import jwt from "../../assets/jwt-flower.webp"
 const Skills = () => {
   return (
     <div className="skills-div" id="skills">
@@ -74,6 +76,18 @@ const Skills = () => {
           <div className="img-container">
             <img src={python}></img>
           </div>
+        </div>
+        <div className="skills">
+          <div className="img-container">
+            <img src={socket}></img>
+          </div>
+          <div className="img-container">
+            <img src={websockets} style={{borderRadius:"50%"}}></img>
+          </div>
+          <div className="img-container">
+            <img src={jwt}></img>
+          </div>
+          
         </div>
       </div>
     </div>
