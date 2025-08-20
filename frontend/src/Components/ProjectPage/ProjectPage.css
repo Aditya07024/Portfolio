@@ -14,7 +14,7 @@
     text-shadow: 2px 2px 5px rgb(255, 3, 3);
 
 }
-
+.left-div{display:none;}
 .slide-div {
   display: flex;
   flex-direction: row;
