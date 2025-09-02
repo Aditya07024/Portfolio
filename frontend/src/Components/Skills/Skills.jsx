@@ -13,7 +13,7 @@ import figma from "../../assets/figma.png";
 import firebase from "../../assets/firebase.png";
 import postman from "../../assets/postman.png";
 import python from "../../assets/python.png";
-import java from "../../assets/java.png";
+// import java from "../../assets/java.png";
 import aws from "../../assets/aws.png";
 import socket from "../../assets/Socket-io.svg";
 import websockets from "../../assets/images.png";
@@ -111,8 +111,8 @@ const Skills = () => {
             <p>JWT</p>
           </div>
           <div className="img-container">
-            <img src={reactnative}></img>
-            <p>ReactNative</p>
+            <img src={reactnative} alt="React Native" />
+            <p>React Native</p>
           </div>
         </div>
       </div>
