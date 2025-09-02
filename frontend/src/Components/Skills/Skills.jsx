@@ -28,64 +28,82 @@ const Skills = () => {
         <div className="skills">
           <div className="img-container">
             <img src={react}></img>
+            <p>React</p>
           </div>
           <div className="img-container">
             <img src={reactnative}></img>
+            <p>React Native</p>
           </div>
           <div className="img-container">
             <img src={tailwindcss}></img>
+            <p>Tailwind CSS</p>
           </div>
           <div className="img-container">
             <img src={css}></img>
+            <p>CSS</p>
           </div>
           
           <div className="img-container">
             <img src={figma}></img>
+            <p>Figma</p>
           </div>
         </div>
         <div className="skills">
           <div className="img-container">
             <img src={nodejs}></img>
+            <p>Node.js</p>
           </div>
           <div className="img-container">
             <img src={expressjs}></img>
+            <p>Express</p>
           </div>
           <div className="img-container">
             <img src={javascript}></img>
+            <p>JavaScript</p>
           </div>
           <div className="img-container">
             <img src={mongodb}></img>
+            <p>MongoDB</p>
           </div>
           <div className="img-container">
             <img src={sql}></img>
+            <p>SQL</p>
           </div>
         </div>
         <div className="skills">
           <div className="img-container">
             <img src={firebase}></img>
+            <p>Firebase</p>
           </div>
           <div className="img-container">
             <img src={postman}></img>
+            <p>Postman</p>
           </div>
           <div className="img-container">
             <img src={aws}></img>
+            <p>AWS</p>
           </div>
           <div className="img-container">
             <img src={java}></img>
+            <p>Java</p>
           </div>
           <div className="img-container">
             <img src={python}></img>
+            <p>Python</p>
           </div>
         </div>
         <div className="skills">
           <div className="img-container">
             <img src={socket}></img>
+            <p>Socket.io</p>
           </div>
           <div className="img-container">
             <img src={websockets} style={{borderRadius:"50%"}}></img>
+            <p>WebSockets</p>
           </div>
           <div className="img-container">
             <img src={jwt}></img>
+            <p>JWT</p>
           </div>
           
         </div>
