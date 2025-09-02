@@ -12,6 +12,7 @@ const ProjectPage = () => {
         <h1>My Work</h1>
       </div>
       <div className="slide-div">
+        {/*
         <div className="left-div">
           <div className="first-project">
             <div className="project-image">
@@ -23,7 +24,7 @@ const ProjectPage = () => {
               <div className="waste-div"></div>
               <div className="line"></div>
             </div>
-          </div>
+          </div>*/}
           <div className="first-project">
             
             <div className="project-image">
