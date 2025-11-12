@@ -3,7 +3,6 @@ import "./Skills.css";
 import react from "../../assets/react.png";
 import javascript from "../../assets/javascript.png";
 import tailwindcss from "../../assets/tailwindcss.png";
-import css from "../../assets/css.png";
 import reactnative from "../../assets/reactnative.png";
 import nodejs from "../../assets/nodejs.png";
 import expressjs from "../../assets/expressjs.png";
@@ -20,6 +19,9 @@ import websockets from "../../assets/images.png";
 import jwt from "../../assets/jwt-flower.webp";
 import typescript from "../../assets/typescript.svg";
 import nextjs from "../../assets/nextjs.jpeg";
+// import redis from "../../assets/redis.png";
+import postgresql from "../../assets/postgresql.png";
+import clerk from "../../assets/clerk.png";
 const Skills = () => {
   return (
     <div className="skills-div" id="skills">
@@ -37,12 +39,12 @@ const Skills = () => {
             <p>NextJS</p>
           </div>
           <div className="img-container">
-            <img src={tailwindcss} alt="Tailwind CSS" />
-            <p>Tailwind CSS</p>
+            <img src={reactnative} alt="ReactNative" />
+            <p>ReactNative</p>
           </div>
           <div className="img-container">
-            <img src={css} alt="CSS" />
-            <p>CSS</p>
+            <img src={tailwindcss} alt="Tailwind CSS" />
+            <p>Tailwind CSS</p>
           </div>
           <div className="img-container">
             <img src={figma} alt="Figma" />
@@ -73,10 +75,6 @@ const Skills = () => {
         </div>
         <div className="skills">
           <div className="img-container">
-            <img src={firebase} alt="Firebase" />
-            <p>Firebase</p>
-          </div>
-          <div className="img-container">
             <img src={postman} alt="Postman" />
             <p>Postman</p>
           </div>
@@ -91,6 +89,10 @@ const Skills = () => {
           <div className="img-container">
             <img src={sql} alt="SQL" />
             <p>SQL</p>
+          </div>
+          <div className="img-container">
+            <img src={postgresql} alt="SQL" />
+            <p>PostgreSQL</p>
           </div>
         </div>
         <div className="skills">
@@ -111,8 +113,12 @@ const Skills = () => {
             <p>JWT</p>
           </div>
           <div className="img-container">
-            <img src={reactnative} alt="React Native" />
-            <p>React Native</p>
+            <img src={clerk} alt="Clerk" />
+            <p>Clerk</p>
+          </div>
+          <div className="img-container">
+            <img src={firebase} alt="Firebase" />
+            <p>Firebase</p>
           </div>
         </div>
       </div>
