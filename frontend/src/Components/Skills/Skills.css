@@ -4,9 +4,11 @@
   height: 100%;
 }
 
-.Heading-div h1 {
+.Heading-div h2 {
   color: aliceblue;
-  padding-left: 6%;
+  /* padding-left: 16%; */
+  display: flex;
+  justify-content: center;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-style: normal;

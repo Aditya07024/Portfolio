@@ -14,25 +14,25 @@ const FrontPage = () => {
           <h2>Hello.</h2>
         </div>
         <div className="name">
-          I'm Aditya
+          <h1>I'm Aditya Kumar</h1>
         </div>
-        <hr/>
+        {/* <hr/> */}
         <div className="description">
-          Website Developer
+          <p>Full-Stack MERN & React Native Developer | UI/UX Designer</p>
         </div>
         <div className="button-div">
-          <a href="#project"><button className='project-button'>My Projects</button></a>
-          <a href="https://drive.google.com/drive/folders/1-ADQBKLl0qADph0_T-f-CiBb6pQoVNsh?usp=sharing"><button>My Resume</button></a>
+          <a href="#project"><button className='project-button'>View My Projects</button></a>
+          <a href="https://drive.google.com/drive/folders/1-ADQBKLl0qADph0_T-f-CiBb6pQoVNsh?usp=sharing"><button>Download My Resume</button></a>
         </div>
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/adityakumar0702/"><img src={linkdin} alt="LinkedIn" /></a>
-          <a href="https://github.com/Aditya07024"><img src={github} alt="GitHub" /></a>
-          <a href="https://leetcode.com/u/adityakumar07024/"><img src={leetcode} alt="LeetCode" /></a>
-          <a href="https://x.com/Aditya07024"><img src={twitter} alt="Twitter" /></a>
-          <a href="https://www.instagram.com/aditya_chaudhary_._/"><img src={instagram} alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/in/adityakumar0702/" title="Aditya Kumar on LinkedIn" aria-label="Visit LinkedIn profile"><img src={linkdin} alt="LinkedIn - Connect with Aditya Kumar, Full-Stack Developer" /></a>
+          <a href="https://github.com/Aditya07024" title="Aditya Kumar on GitHub" aria-label="Visit GitHub repository"><img src={github} alt="GitHub - View Aditya Kumar's code projects and repositories" /></a>
+          <a href="https://leetcode.com/u/adityakumar07024/" title="Aditya Kumar on LeetCode" aria-label="Visit LeetCode profile"><img src={leetcode} alt="LeetCode - Aditya Kumar's algorithmic solutions" /></a>
+          <a href="https://x.com/Aditya07024" title="Aditya Kumar on Twitter" aria-label="Visit Twitter profile"><img src={twitter} alt="Twitter / X - Follow Aditya Kumar for tech updates" /></a>
+          <a href="https://www.instagram.com/aditya_chaudhary_._/" title="Aditya Kumar on Instagram" aria-label="Visit Instagram profile"><img src={instagram} alt="Instagram - Follow Aditya Kumar for creative work and updates" /></a>
         </div>
       </div>
-      <div className="com-image">
+      <div className="com-image" aria-hidden="true">
       </div>
     </div>
   )
