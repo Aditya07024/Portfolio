@@ -26,3 +26,23 @@ body, * {
 a{
       cursor: pointer;
     }
+
+.loader-wrapper{
+  position:fixed;
+  inset:0;
+  background:black;
+  z-index:9999;
+  overflow:hidden;
+}
+
+.loader-video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .7s ease, opacity .7s ease;
+}
+
+.loader-exit .loader-video{
+  transform:scale(1.2);
+  opacity:0;
+}

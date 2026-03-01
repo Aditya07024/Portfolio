@@ -6,6 +6,7 @@ import ProjectPage from './Components/ProjectPage/ProjectPage.jsx'
 import Skills from './Components/Skills/Skills.jsx'
 import ContactPage from './Components/ContactPage/ContactPage.jsx'
 import EducationPage from './Components/EducationPage/EducationPage.jsx'
+import Certificates from './Components/Certificates/Cetificates.jsx'
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
       {/* <EducationPage/> */}
        <ProjectPage/>
       <Skills/>
+      <Certificates/>
       <ContactPage/>
     </div>
   )
