@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useEffectEvent } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Home from './Home.jsx'
@@ -7,13 +7,20 @@ import Seo from './seo/Seo.jsx'
 function Loader({ onFinish }) {
   const [exit, setExit] = useState(false)
   const videoRef = useRef(null)
-  const handleEnd = useEffectEvent(() => {
+  const hasFinishedRef = useRef(false)
+
+  const handleEnd = useCallback(() => {
+    if (hasFinishedRef.current) {
+      return
+    }
+
+    hasFinishedRef.current = true
     setExit(true)
 
     setTimeout(() => {
       onFinish()
     }, 600)
-  })
+  }, [onFinish])
 
   useEffect(() => {
     if (videoRef.current) {
