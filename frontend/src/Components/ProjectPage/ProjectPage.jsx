@@ -29,7 +29,7 @@ const CATEGORIES = [
         desc: "OCR-based prescription extraction, drug interaction detection, real-time price comparison, automated adherence scheduling & RBAC auth. 40% API performance boost via optimised PostgreSQL queries.",
         image: project1,
         accent: "#00ffe5",
-        tech: ["React", "PostgreSQL", "REST API", "OCR", "RBAC"],
+        tech: ["React", "PostgreSQL", "LLM integration", "OCR", "RBAC"],
         github: "https://github.com/Aditya07024/TechMedix",
         site: "https://techmedix.onrender.com/",
         youtube: "#",
@@ -64,7 +64,7 @@ const CATEGORIES = [
         accent: "#00c2ff",
         tech: ["Node.js", "Express", "MongoDB", "Firebase", "MERN"],
         github: "https://github.com/Aditya07024/MindVerse",
-        site: "#",
+        site: "https://mindverse-cwmx.onrender.com",
         youtube: "#",
       },
       {
@@ -109,6 +109,17 @@ const CATEGORIES = [
     accent: "#ff2d78",
     desc: "Cross-platform mobile experiences",
     projects: [
+      {
+        title: "TechMedix",
+        subtitle: "Medicine Management & Wellness Platform",
+        desc: "OCR-based prescription extraction, drug interaction detection, real-time price comparison, automated adherence scheduling & RBAC auth. 40% API performance boost via optimised PostgreSQL queries.",
+        image: project1,
+        accent: "#00ffe5",
+        tech: ["ReactNative", "PostgreSQL", "OCR", "LLM integration", "RBAC"],
+        github: "https://github.com/Aditya07024/TechMedix",
+        site: "https://drive.google.com/file/d/1lrCdWHnf_6N5ZcSrMPA7uUrT4lnrCfEQ/view?usp=share_link",
+        youtube: "#",
+      },
       {
         title: "Expense Tracker",
         subtitle: "Cross-Platform Mobile App",
