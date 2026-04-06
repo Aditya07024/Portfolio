@@ -1,11 +1,19 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useEffectEvent } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Home from './Home.jsx'
+import Seo from './seo/Seo.jsx'
 
 function Loader({ onFinish }) {
   const [exit, setExit] = useState(false)
   const videoRef = useRef(null)
+  const handleEnd = useEffectEvent(() => {
+    setExit(true)
+
+    setTimeout(() => {
+      onFinish()
+    }, 600)
+  })
 
   useEffect(() => {
     if (videoRef.current) {
@@ -16,15 +24,7 @@ function Loader({ onFinish }) {
     }, 3000)
 
     return () => clearTimeout(fallback)
-  }, [])
-
-  const handleEnd = () => {
-    setExit(true)
-
-    setTimeout(() => {
-      onFinish()
-    }, 600)
-  }
+  }, [handleEnd])
 
   return (
     <div className={`loader-wrapper ${exit ? 'loader-exit' : ''}`}>
@@ -51,6 +51,7 @@ function App() {
 
   return (
     <div className="hide-scrollbar">
+      <Seo />
       <Navbar />
       <Home />
     </div>

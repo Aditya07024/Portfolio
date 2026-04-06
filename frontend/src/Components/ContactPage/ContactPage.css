@@ -45,14 +45,14 @@
     }
 
     .contact-div,
-    h1,
     h2,
+    h3,
     p {
       background-color: transparent;
       width: 100%;
       /* margin-top: 1%; */
     }
-    h1 {
+    h2 {
       color: rgb(197, 7, 7);
       font-size: 590%;
       font-family: "Rajdhani", sans-serif;
@@ -60,7 +60,7 @@
       font-style: normal;
       margin-bottom: 0px;
     }
-    h2 {
+    h3 {
       font-size: 33px;
       margin-left: 14%;
       margin-block-start: 0em;
@@ -190,18 +190,18 @@ hr {
     padding: 0 !important;
   }
   .contact-div,
-  h1,
   h2,
+  h3,
   p {
     width: 100% !important;
     margin-top: 8px !important;
     text-align: left !important;
   }
-  h1 {
+  h2 {
     font-size: 32px !important;
     margin-bottom: 4px !important;
   }
-  h2 {
+  h3 {
     font-size: 20px !important;
     margin-left: 0 !important;
   }
@@ -248,18 +248,18 @@ hr {
     padding: 0 !important;
   }
   .contact-div,
-  h1,
   h2,
+  h3,
   p {
     width: 100% !important;
     margin-top: 10px !important;
     text-align: left !important;
   }
-  h1 {
+  h2 {
     font-size: 40px !important;
     margin-bottom: 6px !important;
   }
-  h2 {
+  h3 {
     font-size: 26px !important;
     margin-left: 0 !important;
   }

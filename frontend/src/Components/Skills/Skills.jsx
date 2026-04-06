@@ -22,8 +22,10 @@ import nextjs from "../../assets/nextjs.jpeg";
 // import redis from "../../assets/redis.png";
 import postgresql from "../../assets/postgresql.png";
 import clerk from "../../assets/clerk.png";
+import razorpay from "../../assets/razorpay.png";
+
 const Skills = () => {
-  const skillCategories = [
+  const SKILL_CATEGORIES = [
     {
       category: "Frontend Frameworks",
       skills: [
@@ -143,13 +145,21 @@ const Skills = () => {
           alt: "Firebase - Google's platform for app development and backend services",
         },
       ],
+    },{
+      category: "Payments & Integrations",
+      skills: [
+        {
+          name: "RazorPay",
+          image: razorpay,
+          alt: "RazorPay - Payment gateway for secure online transactions",
+        },],
     },
   ];
 
   return (
-    <div className="skills-div" id="skills">
+    <section className="skills-div" id="skills" aria-labelledby="skills-heading">
       <div className="Heading-div">
-        <h2>Technical Skills & Technologies</h2>
+        <h2 id="skills-heading">Technical Skills & Technologies</h2>
       </div>
       <div className="main-sec">
         <div className="skills">
@@ -301,6 +311,15 @@ const Skills = () => {
             <p>Firebase</p>
           </div>
         </div>
+        <div className="skills">
+          <div className="img-container">
+            <img
+              src={razorpay}
+              alt="Razorpay - Payment gateway for secure online transactions and payment processing"
+            />
+            <p>Razorpay</p>
+          </div>
+        </div>
       </div>
 
       {/* JSON-LD Schema for Technical Skills */}
@@ -313,7 +332,7 @@ const Skills = () => {
             "Full-stack MERN developer with expertise in React, Next.js, React Native, Node.js, Express, MongoDB, PostgreSQL, and UI/UX design",
         })}
       </script>
-    </div>
+    </section>
   );
 };
 export default Skills;

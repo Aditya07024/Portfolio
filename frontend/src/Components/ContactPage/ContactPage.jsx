@@ -30,33 +30,33 @@ const ContactPage = () => {
     window.location.href = `mailto:adityakumar07024@gmail.com?subject=${subject}&body=${body}`;
   };
   return (
-    <div className="full-page" id="contact">
+    <section className="full-page" id="contact" aria-labelledby="contact-heading">
       <div className="main">
         <div className="left-div">
         <div className="social-icon-div">
-          <a href="https://www.linkedin.com/in/adityakumar0702/">
+          <a href="https://www.linkedin.com/in/adityakumar0702/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
             <img src={linkdin} alt="LinkedIn" />
           </a>
-          <a href="https://github.com/Aditya07024">
+          <a href="https://github.com/Aditya07024" target="_blank" rel="noreferrer" aria-label="GitHub profile">
             <img src={github} alt="GitHub" />
           </a>
-          <a href="https://leetcode.com/u/adityakumar07024/">
+          <a href="https://leetcode.com/u/adityakumar07024/" target="_blank" rel="noreferrer" aria-label="LeetCode profile">
             <img src={leetcode} alt="LeetCode" />
           </a>
-          <a href="https://x.com/Aditya07024">
+          <a href="https://x.com/Aditya07024" target="_blank" rel="noreferrer" aria-label="X profile">
             <img src={twitter} alt="Twitter" />
           </a>
-          <a href="https://www.instagram.com/aditya_chaudhary_._/">
+          <a href="https://www.instagram.com/aditya_chaudhary_._/" target="_blank" rel="noreferrer" aria-label="Instagram profile">
             <img src={instagram} alt="Instagram" />
           </a>
         </div>
         <div className="contact-div">
-          <h1>Let's Connect</h1>
+          <h2 id="contact-heading">Let's Connect</h2>
           <p>I’m open to collaborations and projects.</p>
           
-          <a href="https://api.whatsapp.com/send?phone=8650970092"><h2>+91 8650970092</h2></a>
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsdLDtzjNQnGhcwGNvstjWnWCHTdqhjrQhDGFXlmQwkgnlzMKCvbJJtqrfXJXwmxKTKNB">adityakumar07024@gmail.com</a>
-          <div className="contact-image"><img src={contactme} alt=""></img></div>
+          <a href="https://api.whatsapp.com/send?phone=918650970092" target="_blank" rel="noreferrer"><h3>+91 8650970092</h3></a>
+          <a href="mailto:adityakumar07024@gmail.com">adityakumar07024@gmail.com</a>
+          <div className="contact-image"><img src={contactme} alt="Illustration for contacting Aditya Kumar" /></div>
         </div>
         <div className="address-div"></div>
         
@@ -94,7 +94,7 @@ const ContactPage = () => {
       </div>
       <hr></hr>
       <div className="footer"><p>© 2025 Aditya Kumar. All Rights Reserved.</p></div>
-    </div>
+    </section>
   );
 };
 

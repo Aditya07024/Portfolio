@@ -9,15 +9,15 @@ import EducationPage from './Components/EducationPage/EducationPage.jsx'
 import Certificates from './Components/Certificates/Cetificates.jsx'
 const Home = () => {
   return (
-    <div>
+    <main id="main-content">
       <FrontPage />
-      <AboutPage/>
+      <AboutPage />
       {/* <EducationPage/> */}
-       <ProjectPage/>
-      <Skills/>
-      <Certificates/>
-      <ContactPage/>
-    </div>
+      <ProjectPage />
+      <Skills />
+      <Certificates />
+      <ContactPage />
+    </main>
   )
 }
 

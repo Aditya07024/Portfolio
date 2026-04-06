@@ -5,9 +5,9 @@ import zerodha from "../../assets/zerodha.png";
 import p3 from "../../assets/p-3.png";
 import p5 from "../../assets/p5.png";
 import p6 from "../../assets/p6.png";
+import fixit from "../../assets/fixit.png";
 import projectgra from "../../assets/projectgra.png";
 import mindverse from "../../assets/mindverse.png";
-
 // ── helpers ────────────────────────────────────────────────────────────────
 function hexToRgb(hex) {
   const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -45,6 +45,17 @@ const CATEGORIES = [
       //   site: "#",
       //   youtube: "#",
       // },
+      {
+        title: "Fixit24hr",
+        subtitle: "On-Demand Service Booking Platform",
+        desc: "Full-stack service booking platform with real-time request handling, employee assignment, Razorpay payment integration, booking lifecycle management, and automated expiry of unaccepted requests.",
+        image: fixit,
+        accent: "#ff9900",
+        tech: ["React", "Node.js", "PostgreSQL", "Razorpay", "Socket.IO"],
+        github: "https://github.com/Aditya07024/fixit.git",
+        site: "https://www.fixit24hr.in/",
+        youtube: "#",
+      },
       {
         title: "VedicAi",
         subtitle: "Intelligent Vedic Astrology Platform",
@@ -164,7 +175,7 @@ function useFadeIn(threshold = 0.2) {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
-  }, []);
+  }, [threshold]);
   return [ref, visible];
 }
 
@@ -175,7 +186,7 @@ function Modal({ project, accent, onClose }) {
     const handler = (e) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", handler);
     return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", handler); };
-  }, []);
+  }, [onClose]);
 
   const rgb = hexToRgb(accent);
 
@@ -302,10 +313,19 @@ function ProjectCard({ project, categoryAccent, index, onOpen }) {
 
   return (
     <div
+      role="button"
+      tabIndex={0}
       ref={ref}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => onOpen(project)}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          onOpen(project);
+        }
+      }}
+      aria-label={`Open details for ${project.title}`}
       style={{
         position: "relative",
         background: "black",
@@ -504,7 +524,7 @@ const ProjectPage = () => {
           transition: "all 0.5s ease, color 0.4s ease",
         }}>◈ Portfolio · Selected Work</span> */}
 
-        <h2 style={{
+        <h2 id="projects-heading" style={{
           fontFamily: "'Rubik', sans-serif", fontWeight: 900,
           padding:"50px",
           fontSize: "clamp(2.8rem, 7vw, 6rem)",
@@ -516,7 +536,7 @@ const ProjectPage = () => {
           transform: titleVisible ? "none" : "translateY(30px)",
           transition: "all 0.7s cubic-bezier(0.23,1,0.32,1) 0.1s, background 0.5s ease",
         }}>
-          My Work
+          Featured Projects
         </h2>
 
         <p style={{
@@ -527,7 +547,7 @@ const ProjectPage = () => {
           transform: titleVisible ? "none" : "translateY(16px)",
           transition: "all 0.7s ease 0.22s",
         }}>
-          From AI-powered platforms to VS Code extensions —<br />
+          From AI-powered platforms to VS Code extensions,<br />
           each project solves a real problem.
         </p>
       </div>
@@ -582,7 +602,7 @@ const ProjectPage = () => {
       </div> */}
 
       {/* ── GRID ── */}
-      <div style={{
+      <div aria-labelledby="projects-heading" style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
         gap: 24, maxWidth: 1100, margin: "0 auto",

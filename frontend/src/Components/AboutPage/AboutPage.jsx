@@ -4,10 +4,10 @@ import image from "../../../src/assets/image.png";
 
 const AboutPage = () => {
   return (
-    <div className="about-div" id="about">
+    <section className="about-div" id="about" aria-labelledby="about-heading">
       <div className="about-me">
-        <div className="about">About</div>
-        <div className="me">ME.</div>
+        <h2 className="about" id="about-heading">About</h2>
+        <p className="me">ME.</p>
       </div>
       <hr />
       <div className="container">
@@ -69,7 +69,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

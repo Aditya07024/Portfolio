@@ -21,8 +21,8 @@ const certificates = [
 
 const Certificates = () => {
   return (
-    <div className="certificates-section">
-      <h1 className="certificates-heading">Certificates and Achievements</h1>
+    <section className="certificates-section" id="certificates" aria-labelledby="certificates-heading">
+      <h2 className="certificates-heading" id="certificates-heading">Certificates and Achievements</h2>
 
       <div className="certificates-container">
         {certificates.map((cert, index) => (
@@ -32,7 +32,7 @@ const Certificates = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
